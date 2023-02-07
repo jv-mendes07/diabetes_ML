@@ -80,3 +80,12 @@ Antes de inicializar a etapa de análise exploratória, é imprescindível ter u
 * **age** - Idade
 * **outcome** - Resultado de diabetes (1 - Sim; 0 = Não)
 
+Tendo um dicionário de dados disponível, inicializei tal exploração analítica com uma pergunta básica:
+
+#### (1) Qual foi a quantidade de pacientes diagnosticados com diabetes ou não?
+
+Basicamente, após manipular os dados, obtive como resposta que 65 % (500 pacientes) das pacientes não foram diagnosticadas com diabetes, enquanto às demais 34 % (268) das pacientes receberem diagnóstico confirmativo de diabetes.
+
+Plotei um gráfico de colunas para expor visualmente a quantidade de pacientes não diagnosticadas com diabetes em comparação com às pacientes diagnosticadas:
+
+![](./img/gra_01.png)
