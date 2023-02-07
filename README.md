@@ -88,4 +88,4 @@ Basicamente, após manipular os dados, obtive como resposta que 65 % (500 pacien
 
 Plotei um gráfico de colunas para expor visualmente a quantidade de pacientes não diagnosticadas com diabetes em comparação com às pacientes diagnosticadas:
 
-![](./img/gra_01.png)
+![](./img/graf_01.png)
