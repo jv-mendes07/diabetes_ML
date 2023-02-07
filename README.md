@@ -5,5 +5,5 @@ Neste projeto de dados, utilizei um conjunto de dados relativo ao diagnóstico d
 
 
 
-Tal projeto é dividido entre entre às fases de **(1)** tratamento de dados, **(2)** análise exploratória de dados, **(3)** preparação e treino do modelo e **(4)** ajuste de hiperparâmetros.
+Tal projeto é dividido entre entre às fases de **(1)** tratamento de dados, **(2)** análise exploratória de dados, **(3)** preparação e treino do modelo de machine learning e **(4)** ajuste de hiperparâmetros.
 
