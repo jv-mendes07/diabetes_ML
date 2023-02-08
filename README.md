@@ -84,8 +84,67 @@ Tendo um dicionário de dados disponível, inicializei tal exploração analíti
 
 #### (1) Qual foi a quantidade de pacientes diagnosticados com diabetes ou não?
 
-Basicamente, após manipular os dados, obtive como resposta que 65 % (500 pacientes) das pacientes não foram diagnosticadas com diabetes, enquanto às demais 34 % (268) das pacientes receberem diagnóstico confirmativo de diabetes.
+Basicamente, após manipular os dados, obtive como resposta que 65 % (500 pacientes) das pacientes não foram diagnosticadas com diabetes, enquanto às demais 34 % (268) das pacientes receberam diagnóstico confirmativo de diabetes.
 
 Plotei um gráfico de colunas para expor visualmente a quantidade de pacientes não diagnosticadas com diabetes em comparação com às pacientes diagnosticadas:
 
 ![](./img/graf_01.png)
+
+Com tal informação inicial, comecei a analisar cada variável separadamente do dataset, para analisar como cada variável impacta, influencia ou é estatisticamente correlacionada com à variável target, isto é, com a variável que informa se a paciente têm diabetes ou não.
+
+#### (2) A quantidade de gravidezes de uma paciente é correlacionada com o fato da paciente ter diabetes ou não?
+
+Com o método .unique() é verificável que há pacientes sem nenhuma gravidez até pacientes com 17 gravidezes registradas, porém majoritariamente há mais pacientes que tiveram somente uma gravidez até então.
+
+Ou com dados mais detalhados, 55 % das pacientes consultadas têm de nenhuma até 3 gravidezes registradas (0-3), enquanto às de mais 45 % das pacientes têm mais de 4 gravidezes.
+
+Com esses dados, decidi ter em tabelas separadas, a quantidade de pacientes com ou sem diabetes agrupada pela quantidade de gravidezes tidas:
+
+| outcome     | 0   |
+|-------------|-----|
+| pregnancies |     |
+| 1           | 106 |
+| 2           | 84  |
+| 0           | 73  |
+| 3           | 48  |
+| 4           | 45  |
+| 5           | 36  |
+| 6           | 34  |
+| 7           | 20  |
+| 8           | 16  |
+| 10          | 14  |
+| 9           | 10  |
+| 12          | 5   |
+| 13          | 5   |
+| 11          | 4   |
+| 14          | 0   |
+| 15          | 0   |
+| 17          | 0   |
+
+É vísivel que em suma maioria, às pacientes sem nenhuma gravidez e às que tiveram ao menos duas gravidezes são às pacientes que receberam menos diagnósticos confirmativos de diabetes.
+
+| outcome     | 1  |
+|-------------|----|
+| pregnancies |    |
+| 0           | 38 |
+| 1           | 29 |
+| 3           | 27 |
+| 7           | 25 |
+| 4           | 23 |
+| 8           | 22 |
+| 5           | 21 |
+| 2           | 19 |
+| 9           | 18 |
+| 6           | 16 |
+| 10          | 10 |
+| 11          | 7  |
+| 13          | 5  |
+| 12          | 4  |
+| 14          | 2  |
+| 15          | 1  |
+| 17          | 1  |
+
+Interessantemente, às pacientes que mais receberam diagnósticos de diabetes foram às pacientes que não tiveram nenhuma gravidez até então.
+
+E como é sabido que mulheres com diabetes tendem à ter mais dificuldade para engravidar, então é esperado ou suposto parcialmente que haja mais incidência de diabetes em mulheres sem nenhuma gravidez (constando que essas apresentam mais dificuldade para engravidarem).
+
