@@ -184,7 +184,10 @@ Confirmativamente, é vísivel que o nível de glicose é uma variável que infl
 
 Criei uma tabela para trazer tais informações estatísticas concernentes à pressão sanguínea das pacientes:
 
-
+|               |mean   |        |median|      |std    |       |
+|---------------|-------|--------|------|------|-------|-------|
+| outcome       | 0     | 1      | 0    | 1    | 0     | 1     |
+| bloodpressure | 70.92 | 75.12  | 72.0 | 74.0 | 11.93 | 11.95 |
 
 Aproximadamente, em média a pressão sanguínea de pacientes sem diabetes é 70 mmHg, enquanto a pressão sanguínea de pacientes com diabetes é em torno de 75 mmHg.
 
