@@ -207,3 +207,22 @@ O gráfico confirma visualmente o que foi suposto teoricamente, de que não há 
 
 #### (5) Há alguma diferença estatisticamente notável na espessura de pele de pacientes com diabetes em relação aos sem diabetes?
 
+Para responder tal pergunta, criei novamente uma tabela com informações estatísticas relativa à espessura da pele dos dois grupos de pacientes (sem diabetes x com diabetes):
+
+|               |   mean|        |median|      |std   |      |
+|---------------|-------|--------|------|------|------|------|
+| outcome       | 0     | 1      | 0    | 1    | 0    | 1    |
+| skinthickness | 27.73 | 31.69  | 29.0 | 29.0 | 8.55 | 8.66 |
+
+Visivelmente, não há um contraste tão significativo entre a espessura da pele de pacientes sem diabetes em comparação às pacientes sem diabetes.
+
+Basicamente, em média tanto pacientes sem diabetes enquanto pacientes com diabetes apresentam aproximadamente à mesma espessura de pele **(2,7 mm (sem diabetes), 3,1 mm (com diabetes))**, já em relação à mediana e ao desvio-padrão, a espessura da pele de pacientes sem ou com diabetes não apresentam nenhuma diferença significativamente destacável.
+
+Um gráfico de dispersão demonstrará que não há nenhuma diferença estatisticamente significante na espessura da pele de pacientes sem diabetes em comparação à pacientes com diabetes:
+
+![](./img/graf_04.png)
+
+Como é confirmado no gráfico, não há nenhuma correlação perceptiva entre espessura da pele e o diagnóstico de diabetes.
+
+#### (6) Qual é a relação estatística entre o nível de insulina no sangue e o diagnóstico de diabetes?
+
