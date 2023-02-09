@@ -226,3 +226,4 @@ Como é confirmado no gráfico, não há nenhuma correlação perceptiva entre e
 
 #### (6) Qual é a relação estatística entre o nível de insulina no sangue e o diagnóstico de diabetes?
 
+Como é sabido
