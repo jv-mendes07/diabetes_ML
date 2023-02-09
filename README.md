@@ -150,7 +150,7 @@ E como é sabido que mulheres com diabetes tendem à ter mais dificuldade para e
 
 Não há uma correlação tão significativa entre gravidez e diabetes, porém há uma influência entre diabetes e dificuldade para engravidar, o que poderia justificar hipoteticamente o porquê mulheres sem filhos são às com mais casos de diabetes registrado.
 
-#### Qual é a relação do nível de glicose no sangue com a diabetes?
+#### (3) Qual é a relação do nível de glicose no sangue com a diabetes?
 
 Glicose ou glicemia é a taxa de açúcar contida no sangue humano, e é sabido que há uma relação estreita entre o nível de glicose e diabetes, isto é, índividuos com altos níveis de diabetes, tendem à ser portadores de diabetes.
 
@@ -168,10 +168,26 @@ Já sobre às pacientes com diabetes:
 
 * Em média, às pacientes com diabetes têm uma glicose em torno de 142 mg/dl
 * 50 % das pacientes com diabetes têm uma glicose abaixo de 140 mg/dl, enquanto às outras 50 % têm uma glicose acima de 140
+* A assimetria da glicose de pacientes com diabetes é 0.10, ou seja, é assimetricamente positiva, o que significa que a maioria das pacientes apresenta um nível de glicose acima da média de glicose, que é 142 mg/dl.
+
+Somente essas informações estatísticas demonstram rapidamente que há uma correlação entre glicose e diabetes, isto é, pacientes com diabetes tendem à ter mais nível de glicose no sangue em comparação à pacientes sem diabetes diagnosticada.
+
+Por fim, plotei um gráfico de histograma para ter uma interpretação visual sobre a distribuição de frequência do nível de glicose das paciente sem diabetes em comparação às pacientes com diabetes:
+
+![](./img/graf_02.png)
+
+Tal gráfico expõe visualmente que pacientes com diabetes têm uma concentração de glicose acima de 125 mg/dl, enquanto pacientes sem diabetes têm uma concentração de glicose em torno de 100 mg/dl.
+
+Confirmativamente, é vísivel que o nível de glicose é uma variável que influencia ou é correlacionada com o fato de uma paciente ter diabetes ou não.
+
+#### (4) Qual é a média e a mediana de pressão sanguínea das pacientes com diabetes em comparação às pacientes sem diabetes?
+
+Criei uma tabela para trazer tais informações estatísticas concernentes à pressão sanguínea das pacientes:
 
 
 
-Enquanto, metade das pacientes com diabetes têm uma glicose abaixo de 140 mg/dl, enquanto a outra metade têm uma glicose acima de 140 mg/dl.
+Aproximadamente, em média a pressão sanguínea de pacientes sem diabetes é 70 mmHg, enquanto a pressão sanguínea de pacientes com diabetes é em torno de 75 mmHg.
 
+Já em relação à mediana, 50 % das pacientes sem diabetes têm uma pressão sanguínea abaixo de 72 mmHg, enquanto à outra metade têm uma pressão sanguínea acima de 72.
 
-
+Sobre às pacientes com diabetes, 50 % das pacientes têm uma pressão sanguínea abaixo de 74 mmHg, enquanto à outra metade têm uma pressão sanguínea acima de 74.
