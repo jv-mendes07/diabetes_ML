@@ -194,3 +194,16 @@ Aproximadamente, em média a pressão sanguínea de pacientes sem diabetes é 70
 Já em relação à mediana, 50 % das pacientes sem diabetes têm uma pressão sanguínea abaixo de 72 mmHg, enquanto à outra metade têm uma pressão sanguínea acima de 72.
 
 Sobre às pacientes com diabetes, 50 % das pacientes têm uma pressão sanguínea abaixo de 74 mmHg, enquanto à outra metade têm uma pressão sanguínea acima de 74.
+
+Mas já em relação ao desvio-padrão, tanto às pacientes sem quanto às pacientes com diabetes, apresentam uma mesma variação de pressão sanguínea de 11 mmHg em relação à média.
+
+Com base em tais informações, é vísivel que não há uma diferença tão notável na pressão sanguínea das pacientes sem diabetes em comparação com às pacientes com diabetes.
+
+No entanto, um gráfico de dispersão seria útil para vermos a distribuição de frequência da pressão sanguínea de cada tipo de paciente (sem diabetes x com diabetes):
+
+![](./img/graf_03.png)
+
+O gráfico confirma visualmente o que foi suposto teoricamente, de que não há uma correlação estrita entre pressão sanguínea e diabetes.
+
+#### (5) Há alguma diferença estatisticamente notável na espessura de pele de pacientes com diabetes em relação aos sem diabetes?
+
