@@ -266,3 +266,24 @@ Estatisticamente, há uma diferença mínima de índice de massa corporal entre 
 Porém, não há uma diferença tão significativamente notável no IMC de pacientes sem diabetes em comparação às pacientes com diabetes:
 
 ![](./img/graf_06.png)
+
+O gráfico de dispersão acima reafirma o que já foi confirmado anteriormente, através das informações estatísticas analisadas.
+
+### (8) A porcentagem de diabetes é drasticamente maior nas pacientes com diabetes em comparação às pacientes sem diabetes?
+
+Como é suposto, é expectante que pacientes com diabetes tenham uma porcentagem de diabetes maior em comparação à pacientes sem diabetes.
+
+A tabela abaixo traz alguns dados estatísticos sobre a porcentagem de diabetes para os dois grupos distintos de pacientes:
+
+|                          |mean  |        |median|      |std  |      |
+|--------------------------|------|--------|------|------|-----|------|
+| outcome                  | 0    | 1      | 0    | 1    | 0   | 1    |
+| diabetespedigreefunction | 0.43 | 0.55   | 0.34 | 0.45 | 0.3 | 0.37 |
+
+Pacientes com diabetes tendem à ter aproximadamente uma taxa adicional de 10 % de diabetes em comparação à pacientes sem diabetes, ou seja, tal dado expõe o que era esperado de que pacientes com diabetes tenham uma porcentagem mais significativa de diabetes no sangue.
+
+Plotei um gráfico de boxplot (caixa) para expor tal informação visualmente:
+
+![](./img/graf_07.png)
+
+
