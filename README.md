@@ -226,4 +226,19 @@ Como é confirmado no gráfico, não há nenhuma correlação perceptiva entre e
 
 #### (6) Qual é a relação estatística entre o nível de insulina no sangue e o diagnóstico de diabetes?
 
-Como é sabido
+Como é sabido, há uma correlação entre nível de insulina no sangue e diabetes, isto é, indíviduos com diabetes tendem à ter altos níveis de insulina, mesmo que alto nível de insulina não seja necessariamente uma sinalização de diabetes.
+
+O nível de insulina no sangue das pacientes sem diabetes apresentam determinadas características:
+
+* Em média, pacientes sem diabetes têm um nível de insulina em torno de 117 mg/dl
+* 50 % das pacientes sem diabetes têm uma insulina abaixo de 102 mg/dl, enquanto à outra metade têm uma insulina acima de 102
+* 75 % das pacientes sem diabetes têm uma insulina abaixo de 175 mg/dl
+
+Majoritariamente, pacientes sem diabetes apresentam um nível de insulina saudável abaixo de 140 mg/dl (que é o nível de insulina consideravelmente saudável).
+
+Já sobre pacientes com diabetes:
+
+* Em média, pacientes com diabetes têm um nível de insulina em torno de 187 mg/dl
+* 50 % das pacientes sem diabetes têm uma insulina abaixo de 169 mg/dl, enquanto à outra metade têm uma insulina acima de 169
+* 75 % das pacientes sem diabetes têm uma insulina abaixo de 169 mg/dl
+
