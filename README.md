@@ -236,9 +236,17 @@ O nível de insulina no sangue das pacientes sem diabetes apresentam determinada
 
 Majoritariamente, pacientes sem diabetes apresentam um nível de insulina saudável abaixo de 140 mg/dl (que é o nível de insulina consideravelmente saudável).
 
-Já sobre pacientes com diabetes:
+Já em relação à pacientes com diabetes:
 
 * Em média, pacientes com diabetes têm um nível de insulina em torno de 187 mg/dl
 * 50 % das pacientes sem diabetes têm uma insulina abaixo de 169 mg/dl, enquanto à outra metade têm uma insulina acima de 169
 * 75 % das pacientes sem diabetes têm uma insulina abaixo de 169 mg/dl
+
+Majoritariamente, pacientes com diabetes têm um nível de insulina acima de 140 mg/dl, ou seja, pacientes com diabetes têm um nível de insulina não-saudável e acima do normal em comparação à pacientes sem diabetes.
+
+Plotei um gráfico de boxplot (caixa) para ver a distribuição de insulina de pacientes sem diabetes e pacientes com diabetes:
+
+![](./img/graf_05.png)
+
+Graficamente é observável que a maioria dos pacientes sem diabetes apresentam um nível de diabetes em torno de 100 mg/dl, enquanto pacientes com diabetes apresentam um nível de insulina altíssimo acima de 150 mg/dl.
 
