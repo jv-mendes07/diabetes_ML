@@ -250,3 +250,19 @@ Plotei um gráfico de boxplot (caixa) para ver a distribuição de insulina de p
 
 Graficamente é observável que a maioria dos pacientes sem diabetes apresentam um nível de diabetes em torno de 100 mg/dl, enquanto pacientes com diabetes apresentam um nível de insulina altíssimo acima de 150 mg/dl.
 
+É vísivel que há uma relação estatística entre nível de insulina sanguíneo e diagnóstico de diabetes, logo é conclusivo que tal variável de insulina será útil como variável preditora para a construção posterior do modelo de machine learning.
+
+### (7) O índice de massa corporal das pacientes apresenta alguma relação com o fato destas pacientes terem sido diagnosticadas com diabetes ou não?
+
+Criei uma tabela que expõe às principais informações estatísticas de índice de massa corporal em relação aos pacientes sem diabetes ou com diabetes registrada:
+
+|         | mean  |        |median|      |std  |      |
+|---------|-------|--------|------|------|-----|------|
+| outcome | 0     | 1      | 0    | 1    | 0   | 1    |
+| bmi     | 30.85 | 35.4   | 30.1 | 34.3 | 6.5 | 6.59 |
+
+Estatisticamente, há uma diferença mínima de índice de massa corporal entre pacientes sem diabetes e pacientes com diabetes, em média pacientes sem diabetes têm um IMC (índice de massa corporal) que é classificado como sobrepeso (e é próximo da obesidade), enquanto pacientes com diabetes têm um IMC em torno de 35, que já é classificado como obesidade.
+
+Porém, não há uma diferença tão significativamente notável no IMC de pacientes sem diabetes em comparação às pacientes com diabetes:
+
+![](./img/graf_06.png)
