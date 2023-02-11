@@ -316,3 +316,12 @@ Graficamente, tais informações são expostas em um histograma:
 
 ![](./img/graf_08.png)
 
+É vísivel que às pacientes sem diabetes têm um intervalo de idade concentrado entre 20 e 30 anos, enquanto pacientes com diabetes frequentemente apresentam uma idade próxima aos 40 anos, e apresentam um intervalo de idade mais concentrado dos 20 até os 40 anos.
+
+Após realizar várias análises e extrair alguns insights e informações valiosas sobre tal conjunto de dados, é imprescindível começar os próximos passos de aplicação do modelo de machine learning.
+
+## Separação - Dados de Treino X Dados de Teste
+
+Com o método train_test_split, separei o conjunto de dados em dados de treino e dados de teste, os dados de treino serão aplicáveis para treinar o modelo, enquanto os dados de teste serão aplicados para testar e validar a precisão preditiva do modelo.
+
+Primeiramente, separei o conjunto de dados em uma variável X
