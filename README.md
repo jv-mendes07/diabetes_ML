@@ -286,4 +286,33 @@ Plotei um gráfico de boxplot (caixa) para expor tal informação visualmente:
 
 ![](./img/graf_07.png)
 
+Tal gráfico expõe e confirma a diferença de porcentagem de diabetes em pacientes sem diabetes em comparação à pacientes com diabetes.
+
+### (9) Há alguma correlação vísivel entre a idade da paciente e o fato da paciente ter diabetes ou não?
+
+Exporei uma tabela com tais informações estatísticas relativa à esses dois grupos distintos de pacientes:
+
+|         |mean   |        |median|     |std    |       |
+|---------|-------|--------|------|-----|-------|-------|
+| outcome | 0     | 1      | 0  | 1   | 0     | 1     |
+| age     | 31.19 | 37.07  | 27 | 36  | 11.67 | 10.97 |
+
+Em média, às pacientes avaliadas têm uma idade em torno de 33 anos.
+
+50 % das pacientes avaliadas têm uma idade abaixo de 30 anos, enquanto à outra metade têm uma idade acima de 30 anos.
+
+Em relação às pacientes sem diabetes, é constatável estatisticamente que:
+
+* Em média, as pacientes sem diabetes têm uma idade em torno de 31 anos
+* 75 % das pacientes sem diabetes têm uma idade inferior à 37 anos
+
+Já em relação às pacientes com diabetes, é constatado que:
+
+* Pacientes com diabetes em média têm idade em torno de 37 anos
+* 50 % das pacientes com diabetes têm uma idade superior à 36 anos
+* 75 % das pacientes com diabetes têm uma idade abaixo de 44 anos
+
+Graficamente, tais informações são expostas em um histograma:
+
+![](./img/graf_08.png)
 
