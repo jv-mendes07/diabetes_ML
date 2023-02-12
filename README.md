@@ -417,6 +417,51 @@ Isso significa, que de todas às previsões feitas pelo modelo, o modelo acertou
 
 Para avaliar em mais detalhes a acurácia do modelo, decidi construir uma confusão de matriz para ter a informação sobre a quantidade de previsões corretas e incorretas feitas pelo modelo:
 
-![](./img/graf_09.png)
+![](./img/graf_10.png)
 
-Interpretativamente, o modelo de floresta aleatória acertou 97 previsões relativas às pacientes sem diabetes 
+Interpretativamente, o modelo de floresta aleatória acertou 97 previsões relativas às pacientes sem diabetes e errou 10 previsões de pacientes que não tinham diabetes e foram classificadas como se tivessem diabetes, já em contrapartida o modelo acertou 41 previsões de pacientes com diabetes e errou 6 previsões pacientes que tinham diabetes e foram classificadas como se não tivessem diabetes.
+
+Depois deste passo de avaliação do modelo, fui diretamente para a fase de ajuste dos hiperparâmetros, para definir os melhores parâmetros do modelo, para que o modelo atinja o nível máximo de qualidade em suas previsões:
+
+## Ajuste de Hiperparâmetros (Hyperparameter Tuning):
+
+Nesta fase final, decidi ajustar os hiperparâmetros do modelo de floresta aleatória e do modelo de árvore de decisão, que foram os melhores modelos treinados para prever se às pacientes tinham diabetes ou não.
+
+Importei o método GridSearchCV da biblioteca sklearn:
+
+```
+from sklearn.model_selection import GridSearchCV
+```
+Depois da importação do método, defini os hiperparâmetros que seriam testados no modelo, para vermos se tais modelos iriam melhorar suas perfomances preditivas:
+
+```
+model_params = {
+    'random_forest': {
+        'model': RandomForestClassifier(),
+        'params': {
+            'n_estimators': [10, 50, 100, 150, 200]
+        }
+    },
+    'decision_tree_classifier': {
+        'model': DecisionTreeClassifier(),
+        'params': {'criterion': ['gini', 'entropy']
+            
+        }
+    }
+}
+```
+Defini que o modelo de floresta aleatória testará modelos de 10 árvores até 200 árvores em conjunto, para vermos se o aumento na quantidade de árvores irá melhorar às previsões do modelo.
+
+Já para o modelo de árvore de decisão, defini que tal modelo testará somente dois critérios, o critério 'gini' e o critério 'entropy', para vermos qual dos dois critérios melhorará a perfomance do modelo.
+
+Por fim, obtive uma tabela com os melhores hiperparâmetros definidos para cada modelo, com suas respectivas pontuações de acurácia preditiva obtida após o teste dos modelos treinados:
+
+|       |          model           | best_score  |       best_params        |
+|-------|--------------------------|-------------|--------------------------|
+| 0     | random_forest            | 0.89        | {'n_estimators': 100}    |
+| 1     | decision_tree_classifier | 0.87        | {'criterion': 'entropy'} |
+
+Visivelmente, o modelo de floresta aleatória apresenta uma melhor perfomance de previsões ao usar 100 árvores em conjunto para treinar o modelo, com uma acurácia preditiva de 89 % em média.
+
+Já o modelo de árvore de decisão têm uma melhor perfomance com o critério 'entropy' do que com o critério 'gini', isto é, tal modelo de árvore de decisão obtém em média uma acurácia preditiva de 87 %.
+
