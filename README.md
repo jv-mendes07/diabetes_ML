@@ -324,4 +324,48 @@ Após realizar várias análises e extrair alguns insights e informações valio
 
 Com o método train_test_split, separei o conjunto de dados em dados de treino e dados de teste, os dados de treino serão aplicáveis para treinar o modelo, enquanto os dados de teste serão aplicados para testar e validar a precisão preditiva do modelo.
 
-Primeiramente, separei o conjunto de dados em uma variável X
+Primeiramente, separei o conjunto de dados entre às variáveis preditoras e a variável target, às variáveis preditoras que irão ser utilizadas para prever se uma paciente têm diabetes ou não, são:
+
+* pregnancies
+* glucose
+* insulin
+* bmi
+* diabetespedigreefunction
+* age
+
+Já a variável target que será utilizada é a variável:
+
+* outcome
+
+Após isto, separei o conjunto de dados em 80 % de dados para treino e 20 % para teste do modelo de machine learning:
+
+```
+# Separação entre dados de treino e dados de teste:
+# 20 % para teste e 80 % de dados para treino:
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
+```
+Concluída a separação entre dados de treino e dados de teste, apliquei o Feature Scaling para colocar todas às variáveis na mesma escala de intervalo numérica.
+
+## Feature Scaling
+
+Importei o método StandardScaler() para colocar todas às variáveis na mesma escala intervalar de -3 e +3:
+
+```
+# Atribuição de tal método de padronização de escala à uma variável:
+
+sc = StandardScaler()
+```
+
+Padronização aplicada aos dados de treino:
+```
+X_train_2 = sc.fit_transform(X_train)
+```
+Padronização aplicada ao dados de teste:
+```
+X_test_2 = sc.transform(X_test)
+```
+Tal padronização não foi aplicada sob a variável target, porque tal variável já estava no intervalo entre -3 e +3, simplesmente por ser uma variável categórica de 0's (sem diabetes) e 1's (com diabetes)
+
+## Treino do modelo de floresta aleatória (Random Forest):
+
