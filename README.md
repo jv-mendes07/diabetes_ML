@@ -369,3 +369,54 @@ Tal padronização não foi aplicada sob a variável target, porque tal variáve
 
 ## Treino do modelo de floresta aleatória (Random Forest):
 
+Após treinar vários modelos de classificação, o melhor modelo treinado foi o modelo de floresta aleatória que obteve uma acurácia preditiva de aproximadamente 90 %.
+
+Primeiramente, importe o modelo RandomForest() da biblioteca sklearn:
+
+```
+from sklearn.ensemble import RandomForestClassifier
+```
+
+Atribui o modelo importado à uma variável:
+
+```
+
+random_forest_classifier = RandomForestClassifier(random_state = 0,
+                                                  n_estimators = 10)
+```
+Por fim, treinei o modelo sobre os dados de treino:
+```
+random_forest_classifier.fit(X_train_2, y_train)
+```
+Concluída a fase de treino do modelo, fui diretamente avaliar e validar a precisão preditiva do modelo construído:
+
+## Teste de acurácia do modelo de floresta aleatória
+
+Primeiramente, importei os métodos accuracy_score() e confusion_matrix() para avaliar o quão bom o modelo é para realizar previsões relativo ao diagnóstico de diabetes das pacientes consultadas:
+
+```
+from sklearn.metrics import confusion_matrix, accuracy_score
+```
+Depois, atribui à uma variável, às previsões realizadas pelo modelo sob o conjunto de dados de teste:
+
+```
+y_pred_3 = random_forest_classifier.predict(X_test_2)
+```
+Com tais dados previstos pelo modelo, comparei os dados previstos pelo modelo em relação aos dados reais de teste (relativo ao diagnóstico de diabetes das pacientes):
+
+```
+accuracy_score(y_test, y_pred_3).round(2)
+```
+Como saída obtive:
+```
+0.9
+```
+Ou seja, tal modelo obteve estimadamente uma precisão preditiva de 90 %.
+
+Isso significa, que de todas às previsões feitas pelo modelo, o modelo acertou quase 90 % de todas às previsões realizadas.
+
+Para avaliar em mais detalhes a acurácia do modelo, decidi construir uma confusão de matriz para ter a informação sobre a quantidade de previsões corretas e incorretas feitas pelo modelo:
+
+![](./img/graf_09.png)
+
+Interpretativamente, o modelo de floresta aleatória acertou 97 previsões relativas às pacientes sem diabetes 
