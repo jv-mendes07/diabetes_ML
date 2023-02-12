@@ -465,3 +465,6 @@ Visivelmente, o modelo de floresta aleatória apresenta uma melhor perfomance de
 
 Já o modelo de árvore de decisão têm uma melhor perfomance com o critério 'entropy' do que com o critério 'gini', isto é, tal modelo de árvore de decisão obtém em média uma acurácia preditiva de 87 %.
 
+Concluída essa fase, é considerável que tal projeto está terminado, consegui construir um modelo de classificação com uma precisão de quase 90 % para prever e classificar se uma paciente têm diabetes ou não, com base em determinadas informações médicas e físicas sobre a paciente.
+
+Espero que tenha gostado de tal projeto, e é isso, até mais!
