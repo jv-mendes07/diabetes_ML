@@ -371,7 +371,7 @@ Tal padronização não foi aplicada sob a variável target, porque tal variáve
 
 Após treinar vários modelos de classificação, o melhor modelo treinado foi o modelo de floresta aleatória que obteve uma acurácia preditiva de aproximadamente 90 %.
 
-Primeiramente, importe o modelo RandomForest() da biblioteca sklearn:
+Primeiramente, importei o modelo RandomForest() da biblioteca sklearn:
 
 ```
 from sklearn.ensemble import RandomForestClassifier
