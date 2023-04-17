@@ -419,7 +419,7 @@ Para avaliar em mais detalhes a acurácia do modelo, decidi construir uma confus
 
 ![](./img/graf_10.png)
 
-Interpretativamente, o modelo de floresta aleatória acertou 97 previsões relativas às pacientes sem diabetes e errou 10 previsões de pacientes que não tinham diabetes e foram classificadas como se tivessem diabetes, já em contrapartida o modelo acertou 41 previsões de pacientes com diabetes e errou 6 previsões pacientes que tinham diabetes e foram classificadas como se não tivessem diabetes.
+Interpretativamente, o modelo de floresta aleatória acertou 97 previsões relativas às pacientes sem diabetes e errou 10 previsões de pacientes que não tinham diabetes e foram classificadas como se tivessem diabetes, já em contrapartida o modelo acertou 41 previsões de pacientes com diabetes e errou 6 previsões de pacientes que tinham diabetes e foram classificadas como se não tivessem diabetes.
 
 Depois deste passo de avaliação do modelo, fui diretamente para a fase de ajuste dos hiperparâmetros, para definir os melhores parâmetros do modelo, para que o modelo atinja o nível máximo de qualidade em suas previsões:
 
